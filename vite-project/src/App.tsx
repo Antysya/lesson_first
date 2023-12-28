@@ -9,8 +9,8 @@ function App() {
     setText(e.target.value);
   }*/}
 
-  const [input1, setInput1] = useState(0);
-  const [input2, setInput2] = useState(0);
+  const [input1, setInput1] = useState<number>(0);
+  const [input2, setInput2] = useState<number>(0);
   const [sum, setSum] = useState(0);
 
   const handleInputChange = (e:ChangeEvent<HTMLInputElement>) => {
@@ -34,8 +34,8 @@ function App() {
   <Button colorScheme='blue'>Текст</Button>*/}
 
       <div>
-      <Input type="number" name="input1" placeholder='Введите значение' onChange={handleInputChange} />
-      <Input type="number" name="input2" placeholder='Введите значение' onChange={handleInputChange} />
+      <Input type="number" name="input1" placeholder='Введите число' onChange={handleInputChange} />
+      <Input type="number" name="input2" placeholder='Введите число' onChange={handleInputChange} />
       <p>Результат сложения: {sum}</p>
     </div>
     </>
