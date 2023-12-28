@@ -1,0 +1,13 @@
+.badge{
+    display: flex;
+    background-color: salmon;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.badgeText{
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
